@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b4f6c">
+  <title>Medicación de Urgencias - Prototipo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="safetyGate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <span class="tag danger">PROTOTIPO NO VALIDADO</span>
+      <h1 id="gateTitle">Apoyo para preparación de medicación</h1>
+      <p>Herramienta de apoyo para la preparación y administración de medicación de urgencias. No sustituye la prescripción, la ficha técnica, el protocolo vigente ni la doble comprobación.</p>
+      <label class="check"><input id="gateCheck" type="checkbox"> Comprendo que debo verificar paciente, fármaco, dosis, vía, presentación, dilución, velocidad y protocolo antes de administrar.</label>
+      <button id="enterBtn" class="primary" disabled>Entrar al prototipo</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">UGC Urgencias · prototipo local</p>
+      <h1>Medicación de Urgencias</h1>
+    </div>
+    <button id="themeBtn" class="icon-btn" aria-label="Cambiar contraste">◐</button>
+  </header>
+
+  <div class="alert-banner"><strong>Uso de prueba.</strong> Contenido pendiente de validación por Urgencias y Farmacia Hospitalaria.</div>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <label for="search">Buscar</label>
+      <input id="search" type="search" placeholder="Fármaco, marca, indicación..." autocomplete="off">
+      <label for="category">Grupo</label>
+      <select id="category"><option value="all">Todos los grupos</option></select>
+      <label class="check compact"><input id="favoritesOnly" type="checkbox"> Solo favoritos</label>
+      <button id="clearBtn" class="secondary">Limpiar filtros</button>
+      <nav class="side-nav" aria-label="Herramientas">
+        <button class="nav-btn active" data-view="meds">Medicamentos</button>
+        <button class="nav-btn" data-view="dose">Calculadora de dosis</button>
+        <button class="nav-btn" data-view="parkland">Parkland</button>
+        <button class="nav-btn" data-view="about">Seguridad y versión</button>
+      </nav>
+    </aside>
+
+    <section class="content">
+      <section id="medsView" class="view">
+        <div class="section-head"><div><h2>Medicamentos</h2><p id="count"></p></div><span class="tag warning">Pendientes de validación</span></div>
+        <div id="cards" class="card-grid"></div>
+        <p id="empty" class="empty" hidden>No hay resultados con esos filtros.</p>
+      </section>
+
+
+      <section id="doseView" class="view" hidden>
+        <div class="section-head"><div><h2>Calculadora de dosis</h2><p>Calcula volumen a extraer, concentración final y velocidad a partir de una dosis ya prescrita.</p></div><span class="tag danger">No prescribe dosis</span></div>
+        <div class="panel dose-grid">
+          <fieldset><legend>1. Dosis prescrita</legend>
+            <label>Tipo de dosis<select id="doseMode"><option value="total">Dosis total</option><option value="perKg">Dosis por kg</option></select></label>
+            <label id="weightWrap" hidden>Peso (kg)<input id="doseWeight" type="number" min="0.1" max="300" step="0.1"></label>
+            <div class="inline"><label>Dosis<input id="doseValue" type="number" min="0" step="any"></label><label>Unidad<select id="doseUnit"><option value="mg">mg</option><option value="mcg">microgramos</option><option value="g">g</option><option value="UI">UI</option></select></label></div>
+          </fieldset>
+          <fieldset><legend>2. Presentación disponible</legend>
+            <div class="inline"><label>Cantidad<input id="stockAmount" type="number" min="0" step="any"></label><label>Unidad<select id="stockUnit"><option value="mg">mg</option><option value="mcg">microgramos</option><option value="g">g</option><option value="UI">UI</option></select></label></div>
+            <label>Volumen que contiene esa cantidad (ml)<input id="stockVolume" type="number" min="0" step="any"></label>
+          </fieldset>
+          <fieldset><legend>3. Preparación opcional</legend>
+            <label>Volumen final total (ml)<input id="finalVolume" type="number" min="0" step="any"></label>
+            <div class="inline"><label>Duración<input id="duration" type="number" min="0" step="any"></label><label>Unidad<select id="durationUnit"><option value="min">min</option><option value="h">horas</option></select></label></div>
+          </fieldset>
+          <div class="calc-actions"><button id="doseCalcBtn" class="primary">Calcular</button><button id="doseResetBtn" class="secondary">Borrar</button></div>
+          <div id="doseResult" class="result" aria-live="polite">Introduce la dosis prescrita y la presentación disponible.</div>
+        </div>
+        <div class="note"><strong>Regla de seguridad:</strong> la calculadora no selecciona una pauta. Solo realiza conversiones matemáticas con los datos introducidos. No mezcles UI con mg/microgramos/g.</div>
+      </section>
+
+      <section id="parklandView" class="view" hidden>
+        <div class="section-head"><div><h2>Calculadora de Parkland</h2><p>Cálculo orientativo de reposición inicial en pacientes quemados.</p></div><span class="tag danger">Requiere validación clínica</span></div>
+        <div class="calculator panel">
+          <label>Peso (kg)<input id="weight" type="number" min="1" max="300" step="0.1" inputmode="decimal"></label>
+          <label>Superficie corporal quemada (%)<input id="burn" type="number" min="1" max="100" step="0.1" inputmode="decimal"></label>
+          <button id="calcBtn" class="primary">Calcular</button>
+          <button id="resetCalc" class="secondary">Borrar</button>
+          <div id="calcResult" class="result" aria-live="polite">Introduce peso y %SCQ.</div>
+        </div>
+        <div class="note"><strong>Fórmula:</strong> 4 ml × kg × %SCQ. 50% en las primeras 8 horas y 50% en las 16 horas siguientes. Se indica Ringer Lactato. El tiempo se cuenta desde la quemadura, no desde la llegada.</div>
+      </section>
+
+      <section id="aboutView" class="view" hidden>
+        <div class="panel prose">
+          <h2>Seguridad, alcance y versión</h2>
+          <ul>
+            <li>Versión de la aplicación: 3.0.</li>
+            <li>Estado de esta aplicación: prototipo de demostración, sin validación asistencial.</li>
+            <li>No almacena datos de pacientes ni envía información a servidores.</li>
+            <li>Los favoritos se guardan únicamente en el navegador.</li>
+            <li>Antes del uso real, cada ficha debe cotejarse con CIMA/AEMPS, guía farmacoterapéutica y protocolo local vigente.</li>
+            <li>Las fichas pendientes de validación se muestran con advertencia reforzada.</li>
+          </ul>
+          <button id="exportBtn" class="secondary">Exportar favoritos (JSON)</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div><strong>Leyenda de preparación y administración</strong><p>Los símbolos resumen condiciones destacadas. La ficha y el protocolo vigente prevalecen siempre.</p></div>
+      <div id="iconLegend" class="icon-legend" aria-label="Leyenda de iconos"></div>
+    </div>
+  </footer>
+
+  <dialog id="drugDialog">
+    <article id="dialogContent"></article>
+    <form method="dialog"><button class="secondary">Cerrar</button></form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
