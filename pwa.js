@@ -1,0 +1,6 @@
+let deferredInstallPrompt=null;
+const installBtn=document.querySelector('#installBtn');
+window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();deferredInstallPrompt=event;if(installBtn)installBtn.hidden=false;});
+installBtn?.addEventListener('click',async()=>{if(!deferredInstallPrompt)return;deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;installBtn.hidden=true;});
+window.addEventListener('appinstalled',()=>{if(installBtn)installBtn.hidden=true;deferredInstallPrompt=null;});
+if('serviceWorker'in navigator&&location.protocol!=='file:')window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js',{scope:'./'});const toast=document.querySelector('#updateToast');if(reg.waiting&&toast)toast.hidden=false;reg.addEventListener('updatefound',()=>reg.installing?.addEventListener('statechange',()=>{if(reg.installing?.state==='installed'&&navigator.serviceWorker.controller&&toast)toast.hidden=false;}));document.querySelector('#updateBtn')?.addEventListener('click',()=>reg.waiting?.postMessage('SKIP_WAITING'));navigator.serviceWorker.addEventListener('controllerchange',()=>location.reload());}catch(e){console.warn('PWA no disponible',e);}});
