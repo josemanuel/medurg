@@ -1,0 +1,17 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Paquetes comprimidos
+*.zip
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Instalador temporal, ya no necesario
+pwa-kit/
