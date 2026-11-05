@@ -1,19 +1,15 @@
-# Medicación de Urgencias v6
+# Medicación de Urgencias v8
 
-PWA local de apoyo para preparación y administración de medicación de urgencias.
+PWA local. Incluye fichas, colores normativos, iconos, favoritos, calculadoras y maquetador de impresión A3/A4/A5/Carta/Legal con 1 a 8 fichas por fila.
 
-## Ejecutar localmente
-
+## Ejecutar
 ```bash
 python -m http.server 8080
 ```
+Abrir `http://localhost:8080`.
 
-Abrir `http://localhost:8080`. La instalación PWA requiere `localhost` o HTTPS; no funciona mediante `file://`.
-
-## Publicación
-
-Subir todos los archivos conservando la carpeta `icons/`. Para una versión nueva, cambiar `CACHE_NAME` en `sw.js`.
+## PDF
+Use **Imprimir fichas / Guardar PDF**. En el diálogo del navegador elija **Guardar como PDF** y desactive **Encabezados y pies de página** para evitar fecha, título, host y numeración.
 
 ## Seguridad
-
-Prototipo pendiente de validación por Urgencias y Farmacia Hospitalaria. No sustituye prescripción, ficha técnica, protocolo vigente ni doble comprobación.
+Prototipo pendiente de validación clínica y farmacéutica.
