@@ -1,15 +1,21 @@
-# Medicación de Urgencias v8
+# Medicación de Urgencias v9
 
-PWA local. Incluye fichas, colores normativos, iconos, favoritos, calculadoras y maquetador de impresión A3/A4/A5/Carta/Legal con 1 a 8 fichas por fila.
+PWA completa con fichas, favoritos, calculadoras, códigos cromáticos, iconos y maquetador de impresión/PDF.
 
-## Ejecutar
+## Ejecutar localmente
+
 ```bash
 python -m http.server 8080
 ```
-Abrir `http://localhost:8080`.
 
-## PDF
-Use **Imprimir fichas / Guardar PDF**. En el diálogo del navegador elija **Guardar como PDF** y desactive **Encabezados y pies de página** para evitar fecha, título, host y numeración.
+Abra `http://localhost:8080`. La instalación PWA requiere localhost o HTTPS.
+
+## Impresión y PDF
+
+El modal permite A3, A4, A5, Carta y Legal; orientación vertical u horizontal; entre 1 y 8 fichas por fila; fichas resumidas o completas; y todas, favoritas o filtradas.
+
+Las muestras cromáticas se generan como SVG con relleno real para conservar el color en el preview y el PDF. Para ocultar fecha, título, host y numeración, desactive **Encabezados y pies de página** en el diálogo del navegador.
 
 ## Seguridad
+
 Prototipo pendiente de validación clínica y farmacéutica.
