@@ -1,28 +1,6 @@
-const CACHE_NAME = 'medicacion-urgencias-v5';
-const APP_SHELL = [
-  './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
-  './icons/icon-192.png', './icons/icon-512.png',
-  './icons/icon-maskable-192.png', './icons/icon-maskable-512.png'
-];
-self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
-});
-self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))).then(() => self.clients.claim()));
-});
-self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
-  if (event.request.mode === 'navigate') {
-    event.respondWith(fetch(event.request).then(response => {
-      const copy=response.clone(); caches.open(CACHE_NAME).then(cache=>cache.put('./index.html',copy)); return response;
-    }).catch(() => caches.match('./index.html')));
-    return;
-  }
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
-    if (response && response.status === 200 && response.type === 'basic') {
-      const copy=response.clone(); caches.open(CACHE_NAME).then(cache=>cache.put(event.request,copy));
-    }
-    return response;
-  })));
-});
-self.addEventListener('message', event => { if (event.data === 'SKIP_WAITING') self.skipWaiting(); });
+const CACHE_NAME='medicacion-urgencias-v6';
+const APP_SHELL=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-192.png','./icons/icon-maskable-512.png'];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(APP_SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).then(r=>{let c=r.clone();caches.open(CACHE_NAME).then(x=>x.put('./index.html',c));return r}).catch(()=>caches.match('./index.html')));return}e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).then(r=>{if(r.ok&&r.type==='basic'){let copy=r.clone();caches.open(CACHE_NAME).then(x=>x.put(e.request,copy))}return r}))) });
+self.addEventListener('message',e=>{if(e.data==='SKIP_WAITING')self.skipWaiting()});
