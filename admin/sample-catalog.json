@@ -1,0 +1,2145 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogVersion": "0.1.0-draft",
+  "catalogId": "medurg-admin-seed",
+  "center": {
+    "id": "",
+    "name": ""
+  },
+  "status": "DRAFT",
+  "generatedAt": null,
+  "medications": [
+    {
+      "id": "adrenalina",
+      "displayName": "Adrenalina",
+      "brands": [],
+      "clinicalGroup": "Vasoconstrictor",
+      "colorGroup": "simpaticomimetico",
+      "indications": [
+        "Emergencias según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-1",
+          "displayText": "1 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-1",
+          "route": "IV directo; perfusión; IM/SC",
+          "mode": "",
+          "instructions": "Verificar concentración, vía y pauta.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "atropina",
+      "displayName": "Atropina",
+      "brands": [],
+      "clinicalGroup": "Anticolinérgicos",
+      "colorGroup": "anticolinergico",
+      "indications": [
+        "Bradicardia extrema y ritmo periparada"
+      ],
+      "presentations": [
+        {
+          "id": "p-2",
+          "displayText": "1 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-2",
+          "route": "IV directo o diluido; perfusión; IM/SC",
+          "mode": "",
+          "instructions": "IV directo lento. Perfusión según protocolo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "etomidato",
+      "displayName": "Etomidato",
+      "brands": [
+        "Hyptomidate®"
+      ],
+      "clinicalGroup": "Inductores anestésicos",
+      "colorGroup": "inductor",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-3",
+          "displayText": "20 mg / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-3",
+          "route": "IV directo",
+          "mode": "",
+          "instructions": "Requiere monitorización y personal entrenado.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "ketamina",
+      "displayName": "Ketamina",
+      "brands": [
+        "Ketolar®"
+      ],
+      "clinicalGroup": "Inductores anestésicos",
+      "colorGroup": "inductor",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-4",
+          "displayText": "500 mg / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-4",
+          "route": "IV directo o diluido; IM",
+          "mode": "",
+          "instructions": "Verificar presentación y concentración.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "propofol",
+      "displayName": "Propofol",
+      "brands": [],
+      "clinicalGroup": "Inductores anestésicos",
+      "colorGroup": "inductor",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-5",
+          "displayText": "200 mg / 20 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-5",
+          "route": "IV directo; perfusión",
+          "mode": "",
+          "instructions": "Requiere monitorización avanzada.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "clonazepam",
+      "displayName": "Clonazepam",
+      "brands": [
+        "Rivotril®"
+      ],
+      "clinicalGroup": "Benzodiazepinas",
+      "colorGroup": "benzodiazepina",
+      "indications": [
+        "Convulsión"
+      ],
+      "presentations": [
+        {
+          "id": "p-6",
+          "displayText": "1 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-6",
+          "route": "IV directo o diluido; IM",
+          "mode": "",
+          "instructions": "Preparación y velocidad según protocolo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "diazepam",
+      "displayName": "Diazepam",
+      "brands": [
+        "Valium®"
+      ],
+      "clinicalGroup": "Benzodiazepinas",
+      "colorGroup": "benzodiazepina",
+      "indications": [
+        "Convulsión"
+      ],
+      "presentations": [
+        {
+          "id": "p-7",
+          "displayText": "10 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-7",
+          "route": "IV directo o diluido; IM",
+          "mode": "",
+          "instructions": "Dilución y velocidad según protocolo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "midazolam",
+      "displayName": "Midazolam",
+      "brands": [
+        "Dormicum®"
+      ],
+      "clinicalGroup": "Benzodiazepinas",
+      "colorGroup": "benzodiazepina",
+      "indications": [
+        "Sedación y convulsión según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-8",
+          "displayText": "15 mg / 3 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-8",
+          "route": "IV directo o diluido; perfusión; IM",
+          "mode": "",
+          "instructions": "Comprobar concentración final.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "suxametonio",
+      "displayName": "Suxametonio",
+      "brands": [
+        "Anectine®"
+      ],
+      "clinicalGroup": "Relajantes musculares",
+      "colorGroup": "relajante",
+      "indications": [
+        "Inducción y relajación"
+      ],
+      "presentations": [
+        {
+          "id": "p-9",
+          "displayText": "100 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-9",
+          "route": "IV directo; perfusión",
+          "mode": "",
+          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "atracurio",
+      "displayName": "Atracurio",
+      "brands": [],
+      "clinicalGroup": "Relajantes musculares",
+      "colorGroup": "relajante",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-10",
+          "displayText": "50 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-10",
+          "route": "IV directo",
+          "mode": "",
+          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "cisatracurio",
+      "displayName": "Cisatracurio",
+      "brands": [
+        "Nimbex®"
+      ],
+      "clinicalGroup": "Relajantes musculares",
+      "colorGroup": "relajante",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-11",
+          "displayText": "10 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-11",
+          "route": "IV directo",
+          "mode": "",
+          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "rocuronio",
+      "displayName": "Rocuronio",
+      "brands": [
+        "Esmerón®"
+      ],
+      "clinicalGroup": "Relajantes musculares",
+      "colorGroup": "relajante",
+      "indications": [
+        "Inducción para intubación"
+      ],
+      "presentations": [
+        {
+          "id": "p-12",
+          "displayText": "50 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-12",
+          "route": "IV directo",
+          "mode": "",
+          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "neostigmina",
+      "displayName": "Neostigmina",
+      "brands": [
+        "Prostigmine®"
+      ],
+      "clinicalGroup": "Antagonistas RM",
+      "colorGroup": "antagonista-relajante",
+      "indications": [
+        "Reversión del bloqueo neuromuscular"
+      ],
+      "presentations": [
+        {
+          "id": "p-13",
+          "displayText": "0,5 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-13",
+          "route": "IV directo; IM/SC",
+          "mode": "",
+          "instructions": "Pauta y monitorización según contexto.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "sugammadex",
+      "displayName": "Sugammadex",
+      "brands": [
+        "Bridion®"
+      ],
+      "clinicalGroup": "Antagonistas RM",
+      "colorGroup": "antagonista-relajante",
+      "indications": [
+        "Reversión de rocuronio"
+      ],
+      "presentations": [
+        {
+          "id": "p-14",
+          "displayText": "200 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-14",
+          "route": "IV directo",
+          "mode": "",
+          "instructions": "Dosis dependiente del grado de bloqueo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "flumazenilo",
+      "displayName": "Flumazenilo",
+      "brands": [
+        "Anexate®"
+      ],
+      "clinicalGroup": "Antídotos",
+      "colorGroup": "antagonista-benzo",
+      "indications": [
+        "Reversión de benzodiazepinas"
+      ],
+      "presentations": [
+        {
+          "id": "p-15",
+          "displayText": "0,5 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-15",
+          "route": "IV directo o diluido; perfusión",
+          "mode": "",
+          "instructions": "Puede precipitar convulsiones en determinados contextos.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "naloxona",
+      "displayName": "Naloxona",
+      "brands": [],
+      "clinicalGroup": "Antídotos",
+      "colorGroup": "antagonista-opioide",
+      "indications": [
+        "Reversión del efecto opioide"
+      ],
+      "presentations": [
+        {
+          "id": "p-16",
+          "displayText": "0,4 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-16",
+          "route": "IV directo o diluido; perfusión; IM",
+          "mode": "",
+          "instructions": "Titular y vigilar recurrencia.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "morfina",
+      "displayName": "Morfina",
+      "brands": [],
+      "clinicalGroup": "Opioides",
+      "colorGroup": "opioide",
+      "indications": [
+        "Analgesia según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-17",
+          "displayText": "10 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-17",
+          "route": "IV directo o diluido; perfusión; IM/SC",
+          "mode": "",
+          "instructions": "Monitorizar ventilación y consciencia.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "fentanilo",
+      "displayName": "Fentanilo",
+      "brands": [
+        "Fentanest®"
+      ],
+      "clinicalGroup": "Opioides",
+      "colorGroup": "opioide",
+      "indications": [
+        "Analgesia y sedoanalgesia"
+      ],
+      "presentations": [
+        {
+          "id": "p-18",
+          "displayText": "0,15 mg / 3 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-18",
+          "route": "IV directo o diluido; perfusión; IM/SC",
+          "mode": "",
+          "instructions": "Alto riesgo de error en mg y microgramos.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "petidina",
+      "displayName": "Petidina",
+      "brands": [
+        "Dolantina®"
+      ],
+      "clinicalGroup": "Opioides",
+      "colorGroup": "opioide",
+      "indications": [
+        "Analgesia según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-19",
+          "displayText": "50 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-19",
+          "route": "IV directo o diluido; IM/SC",
+          "mode": "",
+          "instructions": "Revisar contraindicaciones e interacciones.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "ondansetron",
+      "displayName": "Ondansetrón",
+      "brands": [],
+      "clinicalGroup": "Antieméticos",
+      "colorGroup": "antiemetico",
+      "indications": [
+        "Antiemético"
+      ],
+      "presentations": [
+        {
+          "id": "p-20",
+          "displayText": "8 mg / 4 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-20",
+          "route": "IV directo o diluido",
+          "mode": "",
+          "instructions": "Verificar riesgo de prolongación QT.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "metoclopramida",
+      "displayName": "Metoclopramida",
+      "brands": [
+        "Primperan®"
+      ],
+      "clinicalGroup": "Antieméticos",
+      "colorGroup": "antiemetico",
+      "indications": [
+        "Antiemético"
+      ],
+      "presentations": [
+        {
+          "id": "p-21",
+          "displayText": "10 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-21",
+          "route": "IV directo o diluido; IM",
+          "mode": "",
+          "instructions": "Revisar contraindicaciones y efectos extrapiramidales.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "alteplasa-ictus",
+      "displayName": "Alteplasa (ictus)",
+      "brands": [
+        "Actilyse®"
+      ],
+      "clinicalGroup": "Trombolíticos",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Ictus isquémico seleccionado"
+      ],
+      "presentations": [
+        {
+          "id": "p-22",
+          "displayText": "20–50 mg",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-22",
+          "route": "IV bolo y perfusión",
+          "mode": "",
+          "instructions": "Alto riesgo. Aplicar protocolo de ictus y doble control.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "alteplasa-embolia",
+      "displayName": "Alteplasa (embolia)",
+      "brands": [
+        "Actilyse®"
+      ],
+      "clinicalGroup": "Trombolíticos",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Embolia pulmonar seleccionada"
+      ],
+      "presentations": [
+        {
+          "id": "p-23",
+          "displayText": "20–50 mg",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-23",
+          "route": "IV carga y perfusión",
+          "mode": "",
+          "instructions": "Alto riesgo. Confirmar peso y criterios.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "noradrenalina",
+      "displayName": "Noradrenalina",
+      "brands": [
+        "Norages®"
+      ],
+      "clinicalGroup": "Vasopresores",
+      "colorGroup": "simpaticomimetico",
+      "indications": [
+        "Soporte vasopresor"
+      ],
+      "presentations": [
+        {
+          "id": "p-24",
+          "displayText": "4 mg / 4 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-24",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Vía, concentración, objetivo y monitorización según protocolo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "dobutamina",
+      "displayName": "Dobutamina",
+      "brands": [
+        "Dobucor®"
+      ],
+      "clinicalGroup": "Vasopresores",
+      "colorGroup": "simpaticomimetico",
+      "indications": [
+        "Soporte inotrópico"
+      ],
+      "presentations": [
+        {
+          "id": "p-25",
+          "displayText": "250 mg / 20 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-25",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Ajuste según respuesta y monitorización.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "dopamina",
+      "displayName": "Dopamina",
+      "brands": [],
+      "clinicalGroup": "Vasopresores",
+      "colorGroup": "simpaticomimetico",
+      "indications": [
+        "Soporte vasoactivo seleccionado"
+      ],
+      "presentations": [
+        {
+          "id": "p-26",
+          "displayText": "200 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-26",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Validar indicación y objetivo hemodinámico.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "isoprenalina",
+      "displayName": "Isoprenalina",
+      "brands": [
+        "Aleudrina®"
+      ],
+      "clinicalGroup": "Vasopresores",
+      "colorGroup": "simpaticomimetico",
+      "indications": [
+        "Bloqueos de alto grado"
+      ],
+      "presentations": [
+        {
+          "id": "p-27",
+          "displayText": "0,2 mg / 1 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-27",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Monitorización electrocardiográfica continua.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "nitroglicerina",
+      "displayName": "Nitroglicerina",
+      "brands": [
+        "Solinitrina®"
+      ],
+      "clinicalGroup": "Hipotensores",
+      "colorGroup": "hipotensor",
+      "indications": [
+        "Protocolo cardiovascular"
+      ],
+      "presentations": [
+        {
+          "id": "p-28",
+          "displayText": "50 mg / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-28",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Titular a objetivo con monitorización.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "urapidil",
+      "displayName": "Urapidil",
+      "brands": [
+        "Elgadil®"
+      ],
+      "clinicalGroup": "Hipotensores",
+      "colorGroup": "hipotensor",
+      "indications": [
+        "Control de presión arterial seleccionado"
+      ],
+      "presentations": [
+        {
+          "id": "p-29",
+          "displayText": "50 mg / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-29",
+          "route": "IV directo; perfusión",
+          "mode": "",
+          "instructions": "Confirmar objetivos y velocidad.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "labetalol",
+      "displayName": "Labetalol",
+      "brands": [
+        "Trandate®"
+      ],
+      "clinicalGroup": "Hipotensores",
+      "colorGroup": "hipotensor",
+      "indications": [
+        "Control de presión arterial seleccionado"
+      ],
+      "presentations": [
+        {
+          "id": "p-30",
+          "displayText": "100 mg / 20 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-30",
+          "route": "IV directo; perfusión",
+          "mode": "",
+          "instructions": "Validar pauta antes de uso.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "atenolol",
+      "displayName": "Atenolol",
+      "brands": [
+        "Tenormin®"
+      ],
+      "clinicalGroup": "Hipotensores",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Protocolo cardiovascular"
+      ],
+      "presentations": [
+        {
+          "id": "p-31",
+          "displayText": "5 mg / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-31",
+          "route": "IV directo lento",
+          "mode": "",
+          "instructions": "Validar contraindicación, máximo y monitorización.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "adenosina",
+      "displayName": "Adenosina",
+      "brands": [
+        "Adenocor®"
+      ],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Taquicardia seleccionada"
+      ],
+      "presentations": [
+        {
+          "id": "p-32",
+          "displayText": "6 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-32",
+          "route": "IV directa rápida",
+          "mode": "",
+          "instructions": "Monitorización continua y equipo de reanimación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "amiodarona",
+      "displayName": "Amiodarona",
+      "brands": [
+        "Trangorex®"
+      ],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Arritmias cardiacas"
+      ],
+      "presentations": [
+        {
+          "id": "p-33",
+          "displayText": "150 mg / 3 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-33",
+          "route": "IV carga y perfusión",
+          "mode": "",
+          "instructions": "Verificar algoritmo aplicable.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "acido-tranexamico",
+      "displayName": "Ácido tranexámico",
+      "brands": [
+        "Amchafibrin®"
+      ],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Hemorragia seleccionada"
+      ],
+      "presentations": [
+        {
+          "id": "p-34",
+          "displayText": "500 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-34",
+          "route": "IV carga y perfusión",
+          "mode": "",
+          "instructions": "Validar indicación y momento.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "acetilcisteina",
+      "displayName": "Acetilcisteína",
+      "brands": [],
+      "clinicalGroup": "Antídotos",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Antídoto de paracetamol"
+      ],
+      "presentations": [
+        {
+          "id": "p-35",
+          "displayText": "5 g / 25 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-35",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Pauta pendiente de validación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "hidroxicobalamina",
+      "displayName": "Hidroxicobalamina",
+      "brands": [
+        "Cyanokit®"
+      ],
+      "clinicalGroup": "Antídotos",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Cianuro y humo de incendios"
+      ],
+      "presentations": [
+        {
+          "id": "p-36",
+          "displayText": "2,5 g",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-36",
+          "route": "IV diluido",
+          "mode": "",
+          "instructions": "No agitar. Usar filtro del kit.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "suero-antiofidico",
+      "displayName": "Suero antiofídico",
+      "brands": [
+        "Viperatab® / Viperfav®"
+      ],
+      "clinicalGroup": "Antídotos",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Picadura de víbora"
+      ],
+      "presentations": [
+        {
+          "id": "p-37",
+          "displayText": "Según marca",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-37",
+          "route": "IV diluido",
+          "mode": "",
+          "instructions": "Dosis según marca y circuito toxicológico.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "sulfato-de-magnesio",
+      "displayName": "Sulfato de magnesio",
+      "brands": [
+        "Sulmetin®"
+      ],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-38",
+          "displayText": "1,5 g / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-38",
+          "route": "IV directo o diluido",
+          "mode": "",
+          "instructions": "Confirmar indicación, dosis y velocidad.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "manitol",
+      "displayName": "Manitol",
+      "brands": [],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-39",
+          "displayText": "10–20 % 500 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-39",
+          "route": "Perfusión IV",
+          "mode": "",
+          "instructions": "Puede cristalizar. Verificar solución y equipo.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "cloruro-sodico-hipertonico",
+      "displayName": "Cloruro sódico hipertónico",
+      "brands": [],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Preparación hipertónica"
+      ],
+      "presentations": [
+        {
+          "id": "p-40",
+          "displayText": "NaCl 20 mEq / 10 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-40",
+          "route": "IV",
+          "mode": "",
+          "instructions": "Alto riesgo. Doble comprobación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "digoxina",
+      "displayName": "Digoxina",
+      "brands": [],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Protocolo cardiológico"
+      ],
+      "presentations": [
+        {
+          "id": "p-41",
+          "displayText": "0,5 mg / 2 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-41",
+          "route": "IV directa o diluida",
+          "mode": "",
+          "instructions": "Margen terapéutico estrecho.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "levosimendan",
+      "displayName": "Levosimendán",
+      "brands": [
+        "Simdax®"
+      ],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Soporte inotrópico seleccionado"
+      ],
+      "presentations": [
+        {
+          "id": "p-42",
+          "displayText": "12,5 mg / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-42",
+          "route": "Perfusión continua",
+          "mode": "",
+          "instructions": "Uso especializado con monitorización.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "omeprazol",
+      "displayName": "Omeprazol",
+      "brands": [],
+      "clinicalGroup": "Miscelánea",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-43",
+          "displayText": "40 mg polvo",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-43",
+          "route": "IV diluido",
+          "mode": "",
+          "instructions": "Diluyente y estabilidad según presentación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "complejo-protrombinico-humano",
+      "displayName": "Complejo protrombínico humano",
+      "brands": [
+        "Prothromplex Total®"
+      ],
+      "clinicalGroup": "Hemostasia / reversión",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Reversión anticoagulante seleccionada"
+      ],
+      "presentations": [
+        {
+          "id": "p-44",
+          "displayText": "500 UI",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-44",
+          "route": "IV directo lento",
+          "mode": "",
+          "instructions": "Alto riesgo. Dosis según INR, peso e indicación.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "somatostatina",
+      "displayName": "Somatostatina",
+      "brands": [],
+      "clinicalGroup": "Hemostasia / reversión",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Hemorragia digestiva según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-45",
+          "displayText": "3 mg polvo + 1 ml API",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-45",
+          "route": "IV carga y perfusión",
+          "mode": "",
+          "instructions": "Validar reconstitución, velocidad y duración.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    },
+    {
+      "id": "heparina-sodica",
+      "displayName": "Heparina sódica",
+      "brands": [],
+      "clinicalGroup": "Heparinas",
+      "colorGroup": "miscelanea",
+      "indications": [
+        "Anticoagulación según protocolo"
+      ],
+      "presentations": [
+        {
+          "id": "p-46",
+          "displayText": "5000 UI / 5 ml",
+          "amount": null,
+          "amountUnit": "mg",
+          "volumeMl": null,
+          "active": true
+        }
+      ],
+      "preparations": [
+        {
+          "id": "prep-46",
+          "route": "IV directo o perfusión",
+          "mode": "",
+          "instructions": "Alto riesgo. Prescribir en UI y doble control.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "icons": []
+        }
+      ],
+      "warnings": [],
+      "sources": [],
+      "status": "DRAFT",
+      "version": "1.0",
+      "review": {
+        "createdAt": "2026-11-05",
+        "updatedAt": "2026-11-05",
+        "nextReviewAt": "",
+        "clinicalReviewer": "",
+        "pharmacyReviewer": "",
+        "approver": "",
+        "approvalDate": "",
+        "comments": ""
+      }
+    }
+  ]
+}
