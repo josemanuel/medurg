@@ -1,13 +1,13 @@
 {
-  "schemaVersion": "2.0.0",
-  "catalogVersion": "v9-migrado-1.0",
+  "schemaVersion": "3.0.0",
+  "catalogVersion": "poster-v1.1-structured-preparations",
   "catalogId": "medicacion-urgencias-catalogo-inicial",
   "center": {
     "id": "",
     "name": ""
   },
   "status": "APPROVED",
-  "generatedAt": "2026-11-07T14:30:00+01:00",
+  "generatedAt": "2026-11-11T12:45:00+01:00",
   "medicationCount": 46,
   "medications": [
     {
@@ -32,15 +32,34 @@
       "preparations": [
         {
           "id": "adrenalina-preparacion-1",
-          "route": "IV directo; perfusión; IM/SC",
-          "mode": "",
-          "instructions": "Verificar concentración, vía y pauta.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "IV directo: 1 min lento.",
+          "displayInstructions": "IV directo: 1 min lento.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "adrenalina-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "1 ampolla (1 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (1 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": 100,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -81,15 +100,31 @@
       "preparations": [
         {
           "id": "atropina-preparacion-1",
-          "route": "IV directo o diluido; perfusión; IM/SC",
-          "mode": "",
-          "instructions": "IV directo lento. Perfusión según protocolo.",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "IV directo o diluido con 10 ml de API.",
+          "displayInstructions": "IV directo o diluido con 10 ml de API.",
+          "diluent": "API",
+          "finalVolumeMl": 10,
+          "displayConcentration": "",
+          "icons": [
+            "bolo"
+          ]
+        },
+        {
+          "id": "atropina-preparacion-2",
+          "name": "IM / SC",
+          "route": "IM / SC",
+          "administrationMode": "IM_SC",
+          "mode": "IM / SC",
+          "instructions": "Administración IM o SC.",
+          "displayInstructions": "Administración IM o SC.",
           "diluent": "",
           "finalVolumeMl": null,
-          "icons": [
-            "bolo",
-            "bomba-perfusion"
-          ]
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -131,14 +166,17 @@
       "preparations": [
         {
           "id": "etomidato-preparacion-1",
+          "name": "IV directo",
           "route": "IV directo",
-          "mode": "",
-          "instructions": "Requiere monitorización y personal entrenado.",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa durante 1 minuto.",
+          "displayInstructions": "Administración IV directa durante 1 minuto.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
         }
       ],
@@ -181,15 +219,33 @@
       "preparations": [
         {
           "id": "ketamina-preparacion-1",
-          "route": "IV directo o diluido; IM",
-          "mode": "",
-          "instructions": "Verificar presentación y concentración.",
-          "diluent": "",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (500 mg) + 10 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (500 mg) + 10 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "1 ml: 50 mg o 1 ml: 25 mg",
           "icons": [
             "bolo",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5"
           ]
+        },
+        {
+          "id": "ketamina-preparacion-2",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -229,15 +285,32 @@
       "preparations": [
         {
           "id": "propofol-preparacion-1",
-          "route": "IV directo; perfusión",
-          "mode": "",
-          "instructions": "Requiere monitorización avanzada.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "propofol-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "Perfusión continua según prescripción.",
+          "displayInstructions": "Perfusión continua según prescripción.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bomba-perfusion"
           ]
         }
       ],
@@ -280,14 +353,31 @@
       "preparations": [
         {
           "id": "clonazepam-preparacion-1",
-          "route": "IV directo o diluido; IM",
-          "mode": "",
-          "instructions": "Preparación y velocidad según protocolo.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "IV directo diluido",
+          "route": "IV directo diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo diluido",
+          "instructions": "1 ampolla (1 mg) + 1 ml de API.",
+          "displayInstructions": "1 ampolla (1 mg) + 1 ml de API.",
+          "diluent": "API",
+          "finalVolumeMl": 2,
+          "displayConcentration": "1 ml: 0,5 mg",
           "icons": [
             "bolo"
           ]
+        },
+        {
+          "id": "clonazepam-preparacion-2",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -329,14 +419,33 @@
       "preparations": [
         {
           "id": "diazepam-preparacion-1",
-          "route": "IV directo o diluido; IM",
-          "mode": "",
-          "instructions": "Dilución y velocidad según protocolo.",
+          "name": "IV directo diluido",
+          "route": "IV directo diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo diluido",
+          "instructions": "1 ampolla (10 mg) + 8 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (10 mg) + 8 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": 10,
+          "displayConcentration": "1 ml: 1 mg",
+          "icons": [
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "diazepam-preparacion-2",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
           "diluent": "",
           "finalVolumeMl": null,
-          "icons": [
-            "bolo"
-          ]
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -378,15 +487,49 @@
       "preparations": [
         {
           "id": "midazolam-preparacion-1",
-          "route": "IV directo o diluido; perfusión; IM",
-          "mode": "",
-          "instructions": "Comprobar concentración final.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "IV directo diluido",
+          "route": "IV directo diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo diluido",
+          "instructions": "1 ampolla (15 mg) + 12 ml de SF.",
+          "displayInstructions": "1 ampolla (15 mg) + 12 ml de SF.",
+          "diluent": "SF",
+          "finalVolumeMl": 15,
+          "displayConcentration": "1 ml: 1 mg",
           "icons": [
             "bolo",
+            "sf-0.9"
+          ]
+        },
+        {
+          "id": "midazolam-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "3 ampollas (45 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "3 ampollas (45 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
             "bomba-perfusion"
           ]
+        },
+        {
+          "id": "midazolam-preparacion-3",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -428,15 +571,34 @@
       "preparations": [
         {
           "id": "suxametonio-preparacion-1",
-          "route": "IV directo; perfusión",
-          "mode": "",
-          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "suxametonio-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "1 ampolla (50 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (50 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -477,14 +639,17 @@
       "preparations": [
         {
           "id": "atracurio-preparacion-1",
+          "name": "IV directo",
           "route": "IV directo",
-          "mode": "",
-          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
         }
       ],
@@ -527,14 +692,17 @@
       "preparations": [
         {
           "id": "cisatracurio-preparacion-1",
+          "name": "IV directo",
           "route": "IV directo",
-          "mode": "",
-          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
         }
       ],
@@ -577,14 +745,17 @@
       "preparations": [
         {
           "id": "rocuronio-preparacion-1",
+          "name": "IV directo",
           "route": "IV directo",
-          "mode": "",
-          "instructions": "Paralizante. Confirmar ventilación y sedación.",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
         }
       ],
@@ -627,15 +798,31 @@
       "preparations": [
         {
           "id": "neostigmina-preparacion-1",
-          "route": "IV directo; IM/SC",
-          "mode": "",
-          "instructions": "Pauta y monitorización según contexto.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
+        },
+        {
+          "id": "neostigmina-preparacion-2",
+          "name": "IM / SC",
+          "route": "IM / SC",
+          "administrationMode": "IM_SC",
+          "mode": "IM / SC",
+          "instructions": "Administración IM o SC.",
+          "displayInstructions": "Administración IM o SC.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -677,11 +864,15 @@
       "preparations": [
         {
           "id": "sugammadex-preparacion-1",
+          "name": "IV directo",
           "route": "IV directo",
-          "mode": "",
-          "instructions": "Dosis dependiente del grado de bloqueo.",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa.",
+          "displayInstructions": "Administración IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
             "bolo"
           ]
@@ -726,13 +917,35 @@
       "preparations": [
         {
           "id": "flumazenilo-preparacion-1",
-          "route": "IV directo o diluido; perfusión",
-          "mode": "",
-          "instructions": "Puede precipitar convulsiones en determinados contextos.",
-          "diluent": "",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (0,5 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (0,5 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
             "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "flumazenilo-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (2,5 mg) en 100–250 ml de SF o SG5.",
+          "displayInstructions": "5 ampollas (2,5 mg) en 100–250 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
             "bomba-perfusion"
           ]
         }
@@ -774,15 +987,48 @@
       "preparations": [
         {
           "id": "naloxona-preparacion-1",
-          "route": "IV directo o diluido; perfusión; IM",
-          "mode": "",
-          "instructions": "Titular y vigilar recurrencia.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "1 ampolla (0,4 mg) IV directa.",
+          "displayInstructions": "1 ampolla (0,4 mg) IV directa.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
+            "bolo"
+          ]
+        },
+        {
+          "id": "naloxona-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (2 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "5 ampollas (2 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
             "bomba-perfusion"
           ]
+        },
+        {
+          "id": "naloxona-preparacion-3",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -822,15 +1068,50 @@
       "preparations": [
         {
           "id": "morfina-preparacion-1",
-          "route": "IV directo o diluido; perfusión; IM/SC",
-          "mode": "",
-          "instructions": "Monitorizar ventilación y consciencia.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "IV directo diluido",
+          "route": "IV directo diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo diluido",
+          "instructions": "1 ampolla (10 mg) + 9 ml de SF.",
+          "displayInstructions": "1 ampolla (10 mg) + 9 ml de SF.",
+          "diluent": "SF",
+          "finalVolumeMl": 10,
+          "displayConcentration": "1 ml: 1 mg",
           "icons": [
             "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9"
+          ]
+        },
+        {
+          "id": "morfina-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (20 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "2 ampollas (20 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
+          ]
+        },
+        {
+          "id": "morfina-preparacion-3",
+          "name": "IM / SC",
+          "route": "IM / SC",
+          "administrationMode": "IM_SC",
+          "mode": "IM / SC",
+          "instructions": "Bolo de 5 mg por vía IM o SC.",
+          "displayInstructions": "Bolo de 5 mg por vía IM o SC.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bolo"
           ]
         }
       ],
@@ -873,16 +1154,49 @@
       "preparations": [
         {
           "id": "fentanilo-preparacion-1",
-          "route": "IV directo o diluido; perfusión; IM/SC",
-          "mode": "",
-          "instructions": "Alto riesgo de error en mg y microgramos.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "IV directo diluido",
+          "route": "IV directo diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo diluido",
+          "instructions": "1 ampolla (0,15 mg) + 12 ml de SF.",
+          "displayInstructions": "1 ampolla (0,15 mg) + 12 ml de SF.",
+          "diluent": "SF",
+          "finalVolumeMl": 15,
+          "displayConcentration": "1 ml: 0,01 mg",
           "icons": [
             "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9"
           ]
+        },
+        {
+          "id": "fentanilo-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "3 ampollas (0,45 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "3 ampollas (0,45 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
+          ]
+        },
+        {
+          "id": "fentanilo-preparacion-3",
+          "name": "IM / SC",
+          "route": "IM / SC",
+          "administrationMode": "IM_SC",
+          "mode": "IM / SC",
+          "instructions": "Administración IM o SC.",
+          "displayInstructions": "Administración IM o SC.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -924,14 +1238,33 @@
       "preparations": [
         {
           "id": "petidina-preparacion-1",
-          "route": "IV directo o diluido; IM/SC",
-          "mode": "",
-          "instructions": "Revisar contraindicaciones e interacciones.",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (50 mg) + 10–100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (50 mg) + 10–100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "petidina-preparacion-2",
+          "name": "IM / SC",
+          "route": "IM / SC",
+          "administrationMode": "IM_SC",
+          "mode": "IM / SC",
+          "instructions": "1/2–1 ampolla (25–50 mg) por vía IM o SC.",
+          "displayInstructions": "1/2–1 ampolla (25–50 mg) por vía IM o SC.",
           "diluent": "",
           "finalVolumeMl": null,
-          "icons": [
-            "bolo"
-          ]
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -971,14 +1304,19 @@
       "preparations": [
         {
           "id": "ondansetron-preparacion-1",
+          "name": "IV directo o diluido",
           "route": "IV directo o diluido",
-          "mode": "",
-          "instructions": "Verificar riesgo de prolongación QT.",
-          "diluent": "",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (8 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (8 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
             "bolo",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5"
           ]
         }
       ],
@@ -1021,14 +1359,33 @@
       "preparations": [
         {
           "id": "metoclopramida-preparacion-1",
-          "route": "IV directo o diluido; IM",
-          "mode": "",
-          "instructions": "Revisar contraindicaciones y efectos extrapiramidales.",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (10 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (10 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "metoclopramida-preparacion-2",
+          "name": "IM",
+          "route": "IM",
+          "administrationMode": "IM",
+          "mode": "IM",
+          "instructions": "Administración IM.",
+          "displayInstructions": "Administración IM.",
           "diluent": "",
           "finalVolumeMl": null,
-          "icons": [
-            "bolo"
-          ]
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -1070,15 +1427,32 @@
       "preparations": [
         {
           "id": "alteplasa-ictus-preparacion-1",
-          "route": "IV bolo y perfusión",
-          "mode": "",
-          "instructions": "Alto riesgo. Aplicar protocolo de ictus y doble control.",
+          "name": "Carga IV",
+          "route": "Carga IV",
+          "administrationMode": "IV_BOLUS",
+          "mode": "Carga IV",
+          "instructions": "0,9 mg/kg de peso, máximo 90 mg. Administrar el 10 % en 1 minuto.",
+          "displayInstructions": "0,9 mg/kg de peso, máximo 90 mg. Administrar el 10 % en 1 minuto.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "alteplasa-ictus-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "Administrar el 90 % restante en 1 hora.",
+          "displayInstructions": "Administrar el 90 % restante en 1 hora.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1121,14 +1495,32 @@
       "preparations": [
         {
           "id": "alteplasa-embolia-preparacion-1",
-          "route": "IV carga y perfusión",
-          "mode": "",
-          "instructions": "Alto riesgo. Confirmar peso y criterios.",
+          "name": "Carga IV",
+          "route": "Carga IV",
+          "administrationMode": "IV_BOLUS",
+          "mode": "Carga IV",
+          "instructions": "10 mg en 1 minuto para cualquier peso.",
+          "displayInstructions": "10 mg en 1 minuto para cualquier peso.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "alteplasa-embolia-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "Si >65 kg: 90 mg en 2 h. Si <65 kg: 1,5 mg/kg en 2 h.",
+          "displayInstructions": "Si >65 kg: 90 mg en 2 h. Si <65 kg: 1,5 mg/kg en 2 h.",
+          "diluent": "",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1171,14 +1563,18 @@
       "preparations": [
         {
           "id": "noradrenalina-preparacion-1",
+          "name": "Perfusión continua",
           "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Vía, concentración, objetivo y monitorización según protocolo.",
-          "diluent": "",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (8 mg) + 100 ml de SG5; 3–10 ml/h.",
+          "displayInstructions": "2 ampollas (8 mg) + 100 ml de SG5; 3–10 ml/h.",
+          "diluent": "SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1221,14 +1617,19 @@
       "preparations": [
         {
           "id": "dobutamina-preparacion-1",
+          "name": "Perfusión continua",
           "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Ajuste según respuesta y monitorización.",
-          "diluent": "",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (500 mg) + 250 ml de SG5 o SF; 8–10 ml/h.",
+          "displayInstructions": "2 ampollas (500 mg) + 250 ml de SG5 o SF; 8–10 ml/h.",
+          "diluent": "SG5 o SF",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1269,14 +1670,19 @@
       "preparations": [
         {
           "id": "dopamina-preparacion-1",
+          "name": "Perfusión continua",
           "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Validar indicación y objetivo hemodinámico.",
-          "diluent": "",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (400 mg) + 250 ml de SG5 o SF; 6–8 ml/h.",
+          "displayInstructions": "2 ampollas (400 mg) + 250 ml de SG5 o SF; 6–8 ml/h.",
+          "diluent": "SG5 o SF",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1319,14 +1725,19 @@
       "preparations": [
         {
           "id": "isoprenalina-preparacion-1",
+          "name": "Perfusión continua",
           "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Monitorización electrocardiográfica continua.",
-          "diluent": "",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (1 mg) + 250 ml de SG5 o SF; 10–30 ml/h.",
+          "displayInstructions": "5 ampollas (1 mg) + 250 ml de SG5 o SF; 10–30 ml/h.",
+          "diluent": "SG5 o SF",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1369,14 +1780,36 @@
       "preparations": [
         {
           "id": "nitroglicerina-preparacion-1",
-          "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Titular a objetivo con monitorización.",
-          "diluent": "",
+          "name": "IV directo lento",
+          "route": "IV directo lento",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo lento",
+          "instructions": "Administración lenta, sin sobrepasar 1 mg/min; o 1 ampolla (5 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "Administración lenta, sin sobrepasar 1 mg/min; o 1 ampolla (5 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "nitroglicerina-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "1 ampolla (50 mg) + 250 ml de SG5 o SF; 4–8 ml/h. Usar material de polietileno de baja adsorción.",
+          "displayInstructions": "1 ampolla (50 mg) + 250 ml de SG5 o SF; 4–8 ml/h. Usar material de polietileno de baja adsorción.",
+          "diluent": "SG5 o SF",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1419,13 +1852,33 @@
       "preparations": [
         {
           "id": "urapidil-preparacion-1",
-          "route": "IV directo; perfusión",
-          "mode": "",
-          "instructions": "Confirmar objetivos y velocidad.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "1/2 ampolla (25 mg). Si precisa, a los 5 min 1 ampolla (50 mg).",
+          "displayInstructions": "1/2 ampolla (25 mg). Si precisa, a los 5 min 1 ampolla (50 mg).",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
+            "bolo"
+          ]
+        },
+        {
+          "id": "urapidil-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (250 mg) + 250 ml de SG5 o SF; 15 ml/h.",
+          "displayInstructions": "5 ampollas (250 mg) + 250 ml de SG5 o SF; 15 ml/h.",
+          "diluent": "SG5 o SF",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
             "bomba-perfusion"
           ]
         }
@@ -1469,15 +1922,34 @@
       "preparations": [
         {
           "id": "labetalol-preparacion-1",
-          "route": "IV directo; perfusión",
-          "mode": "",
-          "instructions": "Validar pauta antes de uso.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Bolo lento de 5–10 mg, máximo 200 mg.",
+          "displayInstructions": "Bolo lento de 5–10 mg, máximo 200 mg.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo"
+          ]
+        },
+        {
+          "id": "labetalol-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2,5 ampollas (250 mg) + 250 ml de SG5 o SF; 15 ml/h.",
+          "displayInstructions": "2,5 ampollas (250 mg) + 250 ml de SG5 o SF; 15 ml/h.",
+          "diluent": "SG5 o SF",
+          "finalVolumeMl": null,
+          "displayConcentration": "1 ml: 1 mg",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1520,14 +1992,17 @@
       "preparations": [
         {
           "id": "atenolol-preparacion-1",
-          "route": "IV directo lento",
-          "mode": "",
-          "instructions": "Validar contraindicación, máximo y monitorización.",
+          "name": "IV directo",
+          "route": "IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo",
+          "instructions": "Administración IV directa lenta.",
+          "displayInstructions": "Administración IV directa lenta.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "indicacion-especial"
+            "bolo"
           ]
         }
       ],
@@ -1570,14 +2045,18 @@
       "preparations": [
         {
           "id": "adenosina-preparacion-1",
+          "name": "IV directa rápida",
           "route": "IV directa rápida",
-          "mode": "",
-          "instructions": "Monitorización continua y equipo de reanimación.",
-          "diluent": "",
+          "administrationMode": "IV_BOLUS",
+          "mode": "IV directa rápida",
+          "instructions": "1 ampolla (6 mg), después 2 ampollas (12 mg), después 3 ampollas (18 mg), cada una seguida de embolada de 20 ml de SF.",
+          "displayInstructions": "1 ampolla (6 mg), después 2 ampollas (12 mg), después 3 ampollas (18 mg), cada una seguida de embolada de 20 ml de SF.",
+          "diluent": "SF",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
             "bolo",
-            "indicacion-especial"
+            "sf-0.9"
           ]
         }
       ],
@@ -1620,14 +2099,34 @@
       "preparations": [
         {
           "id": "amiodarona-preparacion-1",
-          "route": "IV carga y perfusión",
-          "mode": "",
-          "instructions": "Verificar algoritmo aplicable.",
-          "diluent": "",
+          "name": "Carga IV",
+          "route": "Carga IV",
+          "administrationMode": "IV_BOLUS",
+          "mode": "Carga IV",
+          "instructions": "2 ampollas (300 mg) + 100 ml de SG5.",
+          "displayInstructions": "2 ampollas (300 mg) + 100 ml de SG5.",
+          "diluent": "SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo",
+            "sg5"
+          ]
+        },
+        {
+          "id": "amiodarona-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (750 mg) + 250 ml de SG5.",
+          "displayInstructions": "5 ampollas (750 mg) + 250 ml de SG5.",
+          "diluent": "SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1670,14 +2169,36 @@
       "preparations": [
         {
           "id": "acido-tranexamico-preparacion-1",
-          "route": "IV carga y perfusión",
-          "mode": "",
-          "instructions": "Validar indicación y momento.",
-          "diluent": "",
+          "name": "Carga IV",
+          "route": "Carga IV",
+          "administrationMode": "IV_BOLUS",
+          "mode": "Carga IV",
+          "instructions": "2 ampollas (1 g) + 100 ml de SF o SG5.",
+          "displayInstructions": "2 ampollas (1 g) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "acido-tranexamico-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (1 g) + 500 ml de SF o SG5 durante 8 h.",
+          "displayInstructions": "2 ampollas (1 g) + 500 ml de SF o SG5 durante 8 h.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -1718,12 +2239,49 @@
       "preparations": [
         {
           "id": "acetilcisteina-preparacion-1",
-          "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Pauta pendiente de validación.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "Fase 1",
+          "route": "Fase 1",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Fase 1",
+          "instructions": "100 mg/kg en 250 ml de SG5 durante 2 horas.",
+          "displayInstructions": "100 mg/kg en 250 ml de SG5 durante 2 horas.",
+          "diluent": "SG5",
+          "finalVolumeMl": 250,
+          "displayConcentration": "",
           "icons": [
+            "sg5",
+            "bomba-perfusion"
+          ]
+        },
+        {
+          "id": "acetilcisteina-preparacion-2",
+          "name": "Fase 2",
+          "route": "Fase 2",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Fase 2",
+          "instructions": "200 mg/kg en 250 ml de SG5 durante 10 horas.",
+          "displayInstructions": "200 mg/kg en 250 ml de SG5 durante 10 horas.",
+          "diluent": "SG5",
+          "finalVolumeMl": 250,
+          "displayConcentration": "",
+          "icons": [
+            "sg5",
+            "bomba-perfusion"
+          ]
+        },
+        {
+          "id": "acetilcisteina-preparacion-3",
+          "name": "Fase 3",
+          "route": "Fase 3",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Fase 3",
+          "instructions": "200 mg/kg en 250 ml de SG5 durante 10 horas.",
+          "displayInstructions": "200 mg/kg en 250 ml de SG5 durante 10 horas.",
+          "diluent": "SG5",
+          "finalVolumeMl": 250,
+          "displayConcentration": "",
+          "icons": [
+            "sg5",
             "bomba-perfusion"
           ]
         }
@@ -1767,12 +2325,17 @@
       "preparations": [
         {
           "id": "hidroxicobalamina-preparacion-1",
+          "name": "IV diluido",
           "route": "IV diluido",
-          "mode": "",
-          "instructions": "No agitar. Usar filtro del kit.",
-          "diluent": "",
+          "administrationMode": "IV_INFUSION",
+          "mode": "IV diluido",
+          "instructions": "2 ampollas (5 g) + 100 ml de SF en 15 minutos. No agitar. Usar el filtro del kit.",
+          "displayInstructions": "2 ampollas (5 g) + 100 ml de SF en 15 minutos. No agitar. Usar el filtro del kit.",
+          "diluent": "SF",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
+            "sf-0.9",
             "indicacion-especial"
           ]
         }
@@ -1817,12 +2380,19 @@
       "preparations": [
         {
           "id": "suero-antiofidico-preparacion-1",
+          "name": "IV diluido",
           "route": "IV diluido",
-          "mode": "",
-          "instructions": "Dosis según marca y circuito toxicológico.",
-          "diluent": "",
+          "administrationMode": "IV_INFUSION",
+          "mode": "IV diluido",
+          "instructions": "Diluir en 100 ml de SF y administrar en 30 minutos. La dosis depende de la marca comercial; seguir el prospecto.",
+          "displayInstructions": "Diluir en 100 ml de SF y administrar en 30 minutos. La dosis depende de la marca comercial; seguir el prospecto.",
+          "diluent": "SF",
           "finalVolumeMl": null,
-          "icons": []
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "indicacion-especial"
+          ]
         }
       ],
       "warnings": [],
@@ -1864,13 +2434,19 @@
       "preparations": [
         {
           "id": "sulfato-de-magnesio-preparacion-1",
+          "name": "IV directo o diluido",
           "route": "IV directo o diluido",
-          "mode": "",
-          "instructions": "Confirmar indicación, dosis y velocidad.",
-          "diluent": "",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1 ampolla (1,5 g) + 100 ml de SF o SG5.",
+          "displayInstructions": "1 ampolla (1,5 g) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo"
+            "bolo",
+            "sf-0.9",
+            "sg5"
           ]
         }
       ],
@@ -1911,13 +2487,16 @@
       "preparations": [
         {
           "id": "manitol-preparacion-1",
+          "name": "Perfusión IV",
           "route": "Perfusión IV",
-          "mode": "",
-          "instructions": "Puede cristalizar. Verificar solución y equipo.",
+          "administrationMode": "IV_INFUSION",
+          "mode": "Perfusión IV",
+          "instructions": "0,5–1 g/kg en 30 minutos. Puede cristalizar: baño maría a 50–70 °C o equipo con filtro de 15 µm.",
+          "displayInstructions": "0,5–1 g/kg en 30 minutos. Puede cristalizar: baño maría a 50–70 °C o equipo con filtro de 15 µm.",
           "diluent": "",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
             "indicacion-especial"
           ]
         }
@@ -1959,13 +2538,32 @@
       "preparations": [
         {
           "id": "cloruro-sodico-hipertonico-preparacion-1",
-          "route": "IV",
-          "mode": "",
-          "instructions": "Alto riesgo. Doble comprobación.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "Solución hipertónica 3 %",
+          "route": "Solución hipertónica 3 %",
+          "administrationMode": "COMPOUNDING",
+          "mode": "Solución hipertónica 3 %",
+          "instructions": "10 ml de NaCl 20 % + 90 ml de SF.",
+          "displayInstructions": "10 ml de NaCl 20 % + 90 ml de SF.",
+          "diluent": "SF",
+          "finalVolumeMl": 100,
+          "displayConcentration": "",
           "icons": [
-            "indicacion-especial"
+            "sf-0.9"
+          ]
+        },
+        {
+          "id": "cloruro-sodico-hipertonico-preparacion-2",
+          "name": "Solución hipertónica 7 %",
+          "route": "Solución hipertónica 7 %",
+          "administrationMode": "COMPOUNDING",
+          "mode": "Solución hipertónica 7 %",
+          "instructions": "30 ml de NaCl 20 % + 70 ml de SF.",
+          "displayInstructions": "30 ml de NaCl 20 % + 70 ml de SF.",
+          "diluent": "SF",
+          "finalVolumeMl": 100,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9"
           ]
         }
       ],
@@ -2006,14 +2604,33 @@
       "preparations": [
         {
           "id": "digoxina-preparacion-1",
-          "route": "IV directa o diluida",
-          "mode": "",
-          "instructions": "Margen terapéutico estrecho.",
+          "name": "IV directo o diluido",
+          "route": "IV directo o diluido",
+          "administrationMode": "IV_DIRECT",
+          "mode": "IV directo o diluido",
+          "instructions": "1/2–1 ampolla (0,25–0,50 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1/2–1 ampolla (0,25–0,50 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "bolo",
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "digoxina-preparacion-2",
+          "name": "Digitalización rápida",
+          "route": "Digitalización rápida",
+          "administrationMode": "SCHEDULE",
+          "mode": "Digitalización rápida",
+          "instructions": "0 h: 1 ampolla (0,5 mg); 6 h: 1/2 ampolla (0,25 mg); 24 h: 1/2 ampolla (0,25 mg).",
+          "displayInstructions": "0 h: 1 ampolla (0,5 mg); 6 h: 1/2 ampolla (0,25 mg); 24 h: 1/2 ampolla (0,25 mg).",
           "diluent": "",
           "finalVolumeMl": null,
-          "icons": [
-            "bolo"
-          ]
+          "displayConcentration": "",
+          "icons": []
         }
       ],
       "warnings": [],
@@ -2055,14 +2672,18 @@
       "preparations": [
         {
           "id": "levosimendan-preparacion-1",
+          "name": "Perfusión continua",
           "route": "Perfusión continua",
-          "mode": "",
-          "instructions": "Uso especializado con monitorización.",
-          "diluent": "",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "1 ampolla (12,5 mg) + 500 ml de SG5.",
+          "displayInstructions": "1 ampolla (12,5 mg) + 500 ml de SG5.",
+          "diluent": "SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -2103,12 +2724,36 @@
       "preparations": [
         {
           "id": "omeprazol-preparacion-1",
+          "name": "IV diluido",
           "route": "IV diluido",
-          "mode": "",
-          "instructions": "Diluyente y estabilidad según presentación.",
-          "diluent": "",
+          "administrationMode": "IV_INFUSION",
+          "mode": "IV diluido",
+          "instructions": "1–2 ampollas (40–80 mg) + 100 ml de SF o SG5.",
+          "displayInstructions": "1–2 ampollas (40–80 mg) + 100 ml de SF o SG5.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
-          "icons": []
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5"
+          ]
+        },
+        {
+          "id": "omeprazol-preparacion-2",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "2 ampollas (80 mg) + 250 ml de SF o SG5 durante 8 horas.",
+          "displayInstructions": "2 ampollas (80 mg) + 250 ml de SF o SG5 durante 8 horas.",
+          "diluent": "SF o SG5",
+          "finalVolumeMl": null,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
+          ]
         }
       ],
       "warnings": [],
@@ -2150,11 +2795,15 @@
       "preparations": [
         {
           "id": "complejo-protrombinico-humano-preparacion-1",
-          "route": "IV directo lento",
-          "mode": "",
-          "instructions": "Alto riesgo. Dosis según INR, peso e indicación.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "Reconstitución e IV directo",
+          "route": "Reconstitución e IV directo",
+          "administrationMode": "IV_DIRECT",
+          "mode": "Reconstitución e IV directo",
+          "instructions": "Reconstituir 1 vial con 17 ml de agua esterilizada. Administrar lentamente, sin superar 2 ml/min (60 UI/min). Seguir pauta médica y prospecto.",
+          "displayInstructions": "Reconstituir 1 vial con 17 ml de agua esterilizada. Administrar lentamente, sin superar 2 ml/min (60 UI/min). Seguir pauta médica y prospecto.",
+          "diluent": "Agua esterilizada",
+          "finalVolumeMl": 17,
+          "displayConcentration": "",
           "icons": [
             "bolo",
             "indicacion-especial"
@@ -2198,14 +2847,34 @@
       "preparations": [
         {
           "id": "somatostatina-preparacion-1",
-          "route": "IV carga y perfusión",
-          "mode": "",
-          "instructions": "Validar reconstitución, velocidad y duración.",
-          "diluent": "",
-          "finalVolumeMl": null,
+          "name": "Perfusión 12 h",
+          "route": "Perfusión 12 h",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión 12 h",
+          "instructions": "1 ampolla (3 mg) + 500 ml de SF durante 12 h.",
+          "displayInstructions": "1 ampolla (3 mg) + 500 ml de SF durante 12 h.",
+          "diluent": "SF",
+          "finalVolumeMl": 500,
+          "displayConcentration": "",
           "icons": [
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9",
+            "bomba-perfusion"
+          ]
+        },
+        {
+          "id": "somatostatina-preparacion-2",
+          "name": "Perfusión 24 h",
+          "route": "Perfusión 24 h",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión 24 h",
+          "instructions": "2 ampollas (6 mg) + 500 ml de SF durante 24 h.",
+          "displayInstructions": "2 ampollas (6 mg) + 500 ml de SF durante 24 h.",
+          "diluent": "SF",
+          "finalVolumeMl": 500,
+          "displayConcentration": "",
+          "icons": [
+            "sf-0.9",
+            "bomba-perfusion"
           ]
         }
       ],
@@ -2246,15 +2915,19 @@
       "preparations": [
         {
           "id": "heparina-sodica-preparacion-1",
-          "route": "IV directo o perfusión",
-          "mode": "",
-          "instructions": "Alto riesgo. Prescribir en UI y doble control.",
-          "diluent": "",
+          "name": "Perfusión continua",
+          "route": "Perfusión continua",
+          "administrationMode": "CONTINUOUS_INFUSION",
+          "mode": "Perfusión continua",
+          "instructions": "5 ampollas (25.000 UI) + 250 ml de SF o SG5; 10 ml/h.",
+          "displayInstructions": "5 ampollas (25.000 UI) + 250 ml de SF o SG5; 10 ml/h.",
+          "diluent": "SF o SG5",
           "finalVolumeMl": null,
+          "displayConcentration": "",
           "icons": [
-            "bolo",
-            "bomba-perfusion",
-            "indicacion-especial"
+            "sf-0.9",
+            "sg5",
+            "bomba-perfusion"
           ]
         }
       ],
