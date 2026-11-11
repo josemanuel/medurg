@@ -1,6 +1,9 @@
-# Medicación de Urgencias v11 JSON
+# Medicación de Urgencias v11.1 JSON
 
-Catálogo JSON con preparación/dilución estructurada y obligatoria. Cada ficha muestra todas las alternativas de preparación. La impresión incluye las dos leyendas.
+Corrección del maquetador de impresión:
+- La orientación y el tamaño cambian visualmente el lienzo del preview.
+- Ficha resumida muestra una preparación y avisa si existen más.
+- Ficha completa muestra todas las preparaciones, vía, diluyente, concentración y volumen final.
 
 ```bash
 python -m http.server 8080
