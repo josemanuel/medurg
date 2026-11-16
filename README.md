@@ -1,9 +1,10 @@
-# Medicación de Urgencias v11.1 JSON
+# Medicación de Urgencias v11.2 JSON
 
-Corrección del maquetador de impresión:
-- La orientación y el tamaño cambian visualmente el lienzo del preview.
-- Ficha resumida muestra una preparación y avisa si existen más.
-- Ficha completa muestra todas las preparaciones, vía, diluyente, concentración y volumen final.
+Corrige los iconos de diluyente en pantalla, preview y PDF:
+- SF 0,9 %: bolsa azul con siglas SF.
+- SG5: bolsa rosa/roja con siglas SG5.
+
+El relleno de color se fuerza dentro del CSS del iframe de impresión y no depende de los estilos de la aplicación principal.
 
 ```bash
 python -m http.server 8080
